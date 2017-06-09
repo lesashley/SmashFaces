@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Rokkitt', serif;
+}
+h1,h3{
+  margin-bottom: 0;
+}
+hr{
+  margin-top: 0;
+  width: 3%;
+  border: 1.5px solid #000;
+}
+section p,
+button{
+  font-family: 'Roboto', sans-serif;
+}
+.left{
+  display: inline-block;
+}
+.select span{
+  font-size: 1.9rem;
+  margin-right: 40px;
+}
+.select select{
+  border: 0;
+  background-color: #ccc;
+  width: 300px;
+  font-size: 1.7rem;
+}
+.right{
+  float: right;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.picture{
+  background-color: yellow;
+  height: 200px;
+}
+.play{
+  color: #fff;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.play input{
+  width: 100%;
+  height: 30px;
+  padding: 0 3px;
+  outline: 0;
+  color: black;
+}
+.play button{
+  margin: 20px 0;
+  border: 0;
+  background-color: #F9A91A;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  outline: 0;
+}
