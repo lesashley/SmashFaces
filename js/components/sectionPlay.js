@@ -2,7 +2,8 @@
 
 const GamePlay = (update) => {
   const containerPrincipal = $('<div class="col-xs-12 col-md-7 play"></div>');
-  const container = $('<div class="col-xs-9"></div>');
+  const containerImg = $('<div class="col-xs-10 col-md-8"></div>');
+  const containerGame = $('<div class="col-xs-9"></div>');
   const boxName = $('<div></div>');
   const h3 = $('<h3>Ingresa su nombre</h3><br>');
   const input = $('<input type="text" placeholder="Nombre">');
@@ -12,9 +13,33 @@ const GamePlay = (update) => {
   boxName.append(h3);
   boxName.append(input);
   boxButton.append(button);
-  container.append(boxName);
-  container.append(boxButton);
-  containerPrincipal.append(container);
+  containerGame.append(boxName);
+  containerGame.append(boxButton);
+  containerPrincipal.append(containerGame);
+  containerPrincipal.append(containerImg);
+
+
+/*Imprimir todas las imagenes*/
+  // state.coders.forEach((e) =>{
+  //   console.log(e.name);
+  //   containerImg.append(imagenes(e));
+  // });
 
   return containerPrincipal;
 }
+
+// const filterByCountry = (c,country) => {
+//   return c.filter(e => {
+//     return e.country == country;
+//   });
+// }
+
+
+
+/*FUNCION PARA PROBAR IMPRIMIR FOTOS*/
+// const imagenes = (coder) => {
+//   const container = $('<div></div>');
+//   const img = $(`<img src="img/${coder.country}/${coder.image}">`);
+//   container.append(img);
+//   return container;
+// }

@@ -1,4 +1,4 @@
-var mexico = [{
+const mexico = [{
               imagen: "Alma Patricia Jimenez.JPG",
               name: "Alma"
             },{
@@ -6,10 +6,10 @@ var mexico = [{
               name: "Ana"
             },{
               image: "Analy Miranda.JPG",
-              name: "Analy"  
+              name: "Analy"
             },{
               image: "Areli Rodriguez.JPG",
-              name: "Areli"  
+              name: "Areli"
             },{
               image: "Beatriz Quesadas.JPG",
               name: "Beatriz"
