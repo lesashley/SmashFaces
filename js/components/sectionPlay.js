@@ -48,7 +48,7 @@ const filterByName = (coder,name)=>{
     reRender($(".box-img"), newCoder);
     msjError("");
     $("#point").empty();
-    puntos++;
+    puntos+=5;
     $("#point").text(puntos);
   }
   else {
