@@ -35,16 +35,18 @@ button{
 .mt-30{
   margin-top: 30px;
 }
-.picture{
-  background-color: yellow;
-  height: 200px;
-}
+
 .play{
   color: #fff;
   background-color: #333333;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 400px;
+}
+.box-content div:nth-child(2){
+  margin: 0 auto;
+  text-align: center;
 }
 .play input{
   width: 100%;
@@ -57,7 +59,16 @@ button{
   margin: 20px 0;
   border: 0;
   background-color: #F9A91A;
-  padding: 5px 10px;
-  font-size: 1.3rem;
+  padding: 10px 10px;
+  font-size: 1.4rem;
   outline: 0;
+  font-weight: bold;
+}
+section img{
+  width: 430px;
+  height: 400px;
+}
+.text{
+  font-size: 1.4rem;
+  color: #F9A91A;
 }

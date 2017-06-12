@@ -2,8 +2,7 @@
 
 const Image = (coder,update) => {
   const container = $('<div></div>');
-  const img = $(`<img src="img/${coder.country}/${coder.image}">`);
-
+  const img = $(`<img src="img/${coder.sede}/${coder.image}">`);
   container.append(img);
   return container;
 }
@@ -11,13 +10,11 @@ const Image = (coder,update) => {
 $("select").on('change',(e) => {
   e.preventDefault();
   var a = $("select").val();
-  alert("dfdfgdg");
-  const pais = filterByCountry(state.coders, a);
-  reRender(containerImg, pais);
+  const selectedCoder = filterByCountry(state.coders, a);
+  reRender($(".box-img"), selectedCoder);
 });
 
 const reRender = (containerImg, coderSeleccionada) => {
-  container.empty();
-  var r = Math.floor(Math.random()*coderSeleccionada.length);
-  containerImg.append(Image(coderSeleccionada[r]));
+  containerImg.empty();
+  containerImg.append(Image(coderSeleccionada));
 }

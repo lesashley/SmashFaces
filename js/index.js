@@ -1,7 +1,7 @@
 'use strict';
 const render = (root) => {
   root.empty();
-  const wrapper = $('<div class="wrapper col-xs-12"></div>');
+  const wrapper = $('<div class="wrapper row"></div>');
 
     wrapper.append(GamePlay(_ => render(root)));
 
